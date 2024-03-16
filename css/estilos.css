@@ -1,0 +1,56 @@
+/*VARIABLES*/
+:root{
+    --color-primario: #FCB03B; 
+    --color-secundario: #E92F3B;
+    --color-background: #EFF6F5;
+    --color-texto: #A1A5A6;
+    --text-default: 'Open Sans';
+}
+
+/*GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*respetar bordes que le pongo*/
+    font-family: var(--text-default), Arial, sans-serif;
+}
+
+body{
+    background: var(--color-background);
+}
+
+.titulos{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;  /*todo mayúscula*/
+    letter-spacing: 1px; /*cada letra se separe 1px*/
+    font-weight: 600;
+}
+.subtitulos{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase; 
+    font-weight: 400;
+    color: var(--color-primario);
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #FFF;
+    background: var(--color-primario);
+    font-weight: 700;
+    padding: 15px 30px; /*arriba abajo, a los lados */
+    outline: none;/*línea de afuera*/
+    border: 2px solid var(--color-primario);
+    cursor: pointer;
+    position: relative; /*colocar cuanto deseo que se separe del resto obj */
+    top: 20px;
+    transition: all 0.3s;
+}
+.btn span{
+    padding-left: 10px;
+}
+.btn:hover{
+    padding: 15px 45px;
+}
