@@ -2,6 +2,7 @@
 :root{
     --color-primario: #FCB03B; 
     --color-secundario: #E92F3B;
+    --color-background-sombra:#E92F3B30;
     --color-background: #EFF6F5;
     --color-texto: #A1A5A6;
     --text-default: 'Open Sans';
@@ -117,3 +118,28 @@ body{
 
 
 /*SLIDER DE PRODUCTOS*/
+#menu-productos .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+.contenedor-principal #btn-izquierda,
+.contenedor-principal #btn-derecha{
+    position: absolute;
+    width: 50px;
+    height: 10%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 40px;
+    margin: 0 15px;
+    color: var(--color-secundario);
+    z-index: 500;
+    outline: none;
+    transition: all 0.3s;
+}
+.contenedor-principal #btn-izquierda:hover,
+.contenedor-principal #btn-derecha:hover{
+    background: var(--color-background-sombra);
+}
